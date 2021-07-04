@@ -5,8 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Square Quantities</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>Hello There!</p>
+  <button class="menu-button" id="menu-btn"><span class="unicode">&#8227</span></button>
+  <div class="sidebar-container tuckin">
+    <ul>
+      <li class="head">
+        <h2>SQUARE</h2>
+        <h6>(Properties)</h6  >
+      </li>
+      <li class="x" id="area">Area</li>
+      <li class="x" id="perimeter">Perimeter</li>
+      <li class="x" id="diagonal">Diagonal</li>
+    </ul>
+  </div>
+  <div class="x" id="area-container">
+    <h1 id="area-header" class="h1 active-head-a">Calculate the Area of a Square</h1>
+    <label><p>SIDE:</p> <input type="number" id="side-a"></label>
+    <div class="answer"><p class="answer-text">AREA: </p><p id="a-answer" class="answer-box"></p></div>
+  </div>
+  <div class="notactive x" id="perimeter-container">
+    <h1 id="perimeter-header" class="h1 active-head-p">Calculate the Perimeter of a Square</h1>
+    <label><p>SIDE:</p> <input type="number" id="side-b"></label>
+    <div class="answer"><p class="answer-text">PERIMETER: </p><p id="p-answer" class="answer-box"></p></div>
+  </div>
+  <div class="notactive x" id="diagonal-container">
+    <h1 id="diagonal-header" class="h1 active-head-d">Calculate the Diagonal of a Square</h1>
+    <label><p>SIDE:</p> <input type="number" id="side-c"></label>
+    <div class="answer"><p class="answer-text">DIAGONAL: </p><p id="d-answer" class="answer-box"></p></div>
+  </div>
+  <div class="fixed" id="fixedbg"></div>
+  
+  <script src="js/square.js"></script>
 </body>
 </html>
