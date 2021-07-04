@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button.menu-button {
+  background: rgb(38, 97, 226);
+  color: #ffffff;
+  border: none;
+  border-radius: 0 60px 60px 0;
+  outline: none;
+  position: fixed;
+  top: 40%;
+  left: -3%;
+  padding: 1% 1.5%;
+  font-size: 3em;
+  transition: all 0.2s ease-in-out;
+  width: 9%;
+  text-align: right;
+  overflow: hidden;
+} 
+button.menu-button:hover {
+  background: grey;
+  left: 0;
+}
+div.sidebar-container {
+  width: 45%;
+  background: rgb(93, 138, 233);
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  cursor: default;
+  transition: all 0.3s ease-in-out;
+}
+.tuckin {
+  left: -45%;
+}
+.tuckout {
+  left: 0%;
+}
+ul {
+  list-style-type: none;
+}
+.head {
+  background: rgb(24, 86, 219);
+  color: white;
+  padding: 30% 0;
+}
+li {
+  background: rgb(67, 119, 231);
+  color: white;
+  padding: 10%;
+  display: block;
+}
+li:hover {
+  background: rgb(49, 104, 223);
+}
+.active {
+  background: rgb(35, 93, 218);
+}
+.notactive {
+  display: none;
+}
+.h1 {
+  color: rgb(38, 97, 226);
+}
+p {
+  width: fit-content;
+  margin: 0 auto;
+}
+input {
+  border: 2px solid rgb(38, 97, 226);
+  border-radius: 10px;
+  font-size: 3em;
+  width: 7%;
+  outline: none;
+  text-align: center;
+  padding: 2% auto 2%;
+  transition: all 0.3s ease-in-out;
+}
+.answer {
+  margin-top: 1%;
+}
+.answer-text {
+  font-size: 1.5em;
+}
+#a-answer, #p-answer {
+  transition: all 0.3s ease-in-out;
+}
+.answer-box {
+  padding: 0%;
+  border: 2px solid rgb(38, 97, 226);
+  border-radius: 10px;
+  font-size: 3em;
+  width: fit-content;
+  min-width: 7%;
+  height: 60px;
+  margin: 1% auto 2%;
+  transition: all 0.3s ease-in-out;
+}
+.fixed {
+  background: transparent;
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -111;
+}
+@media screen and (max-width: 832px) {
+  input, .answer-box, #p-answer, #a-answer {
+    height: 40px;
+    font-size: 1.7em;
+    min-width: 10%;
+  }
+  .answer {
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 330px) {
+  input, .answer-box, #p-answer, #a-answer {
+    min-width: 20%;
+  }
+  .answer {
+    margin-top: 20%;
+  }
+}
+@media screen and (max-width: 270px) {
+  .head {
+    font-size: 0.7em;
+  }
+  .h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  button.menu-button {
+    font-size: 2em;
+    left: -8%;
+    width: 20%;
+  }
+}
